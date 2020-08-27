@@ -1,0 +1,15 @@
+Build an E-commerce website
+Using:
+React Router for a SPA
+Context API for React
+Firebase for authentication,  database and hosting
+ReactJS for front end
+
+* npx create-react-app
+* cleaning folders
+* create a project on Firebase
+* npm install firebase tools
+* npm install styled-components
+* npm-intall react-router-dom
+
+
