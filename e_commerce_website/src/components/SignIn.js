@@ -7,7 +7,13 @@ import SignInHeader from "./SignInHeader";
 import SignInFooter from "./SignInFooter";
 
 function SignIn() {
+  // useHistory hook to navegate between pages
   const history = useHistory();
+
+  // variable to hold the onclick event  
+  const handleClick = () => {
+    history.push("/signup");
+}
 
   return (
     <Container>
@@ -36,7 +42,7 @@ function SignIn() {
       <hr />
       <FormWrapper>
         <p>New to .COM?</p>
-        <Button onClick={() => history.push("/signup")}>CREATE ACCOUNT</Button>
+        <Button onClick={handleClick}>CREATE ACCOUNT</Button>
       </FormWrapper>
       <SignInFooter />
     </Container>

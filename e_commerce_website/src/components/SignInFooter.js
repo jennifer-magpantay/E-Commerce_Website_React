@@ -8,11 +8,7 @@ const SignInWrapper = styled.footer`
   font-size: 12px;
   text-align: center;
 
-  @media (max-width: 800px) {
-    font-size: 10px;
-  }
-
-  & p {
+   & p {
     color: var(--dk-gray);
   }
 

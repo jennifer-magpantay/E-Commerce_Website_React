@@ -12,6 +12,11 @@ const Button = styled.button`
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media (max-width: 800px){
+    font-size: 14px;
+    padding: 12px 18px;
+  }
 `;
 
 export default Button;

@@ -1,32 +1,38 @@
-import React from 'react';
-import styled from 'styled-components';
-import Button from './Button';
+import React from "react";
+import styled from "styled-components";
+import SearchIcon from "@material-ui/icons/Search";
 
 const SearchWrapper = styled.div`
-width: 60%;
-`;
+  display: flex;
+  width: 100%;
+  order: 2;
 
-const Form = styled.form`
+  @media (max-width: 800px) {
+    order: 3;
+  }
 
- & input {
-     width: 80%;
- }
+  & input {
+    height: 40px;
+    border: none;
+    border-radius: 0;
+  }
 
- & button {
-    width: 15%;
-    padding: 12px;
- }
+  .header_searchIcon {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 10px;
+    margin: 8px 5px 8px 0;
+    background-color: var(--golden);
+  }
 `;
 
 function SearchContainer() {
-    return (
-        <SearchWrapper>
-        <Form>
-          <input type="text" name="search" />
-          <Button type="submit">Search</Button>
-        </Form>
-      </SearchWrapper>
-    )
+  return (
+    <SearchWrapper>
+      <input type="text" name="search" />
+      <SearchIcon className="header_searchIcon" />
+    </SearchWrapper>
+  );
 }
 
 export default SearchContainer;

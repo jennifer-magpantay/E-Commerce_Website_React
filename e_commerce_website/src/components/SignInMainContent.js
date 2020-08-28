@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import Container from "./Container";
 import Button from "./Button";
 
@@ -21,7 +21,7 @@ function SignInMainContent() {
         <p>Want to see personalised recommendations?</p>
         <Button onClick={() => history.push("/signin")}>SIGN IN</Button>
         <p>
-          New to .COM?<strong> Start here</strong>
+          New to .COM?<strong><Link to="/signup"> Start here</Link></strong>
         </p>
       </SignInMainWrapper>
       <hr />

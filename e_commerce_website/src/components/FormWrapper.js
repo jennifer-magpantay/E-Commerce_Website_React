@@ -13,6 +13,10 @@ export const FormWrapper = styled.div`
     font-size: 12px;
     line-height: 1.5;
   }
+
+  @media (max-width: 800px){
+    width: 75%;
+  }
 `;
 
 export const Form = styled.form`

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 import Logo from "../assets/images/logo_white_1.png";
 
 const HeaderWrapper = styled.header`
@@ -22,9 +23,17 @@ const LogoIcon = styled.img`
  `;
 
 function SignInHeader() {
+   // useHistory hook to navegate between pages
+   const history = useHistory();
+
+   // variable to hold the onclick event  
+   const handleClick = () => {
+     history.push("/");
+ }
+
   return (
     <HeaderWrapper>
-      <LogoIcon src={Logo} alt="Website Logo Centralized" />
+      <LogoIcon onClick={handleClick} src={Logo} alt="Website Logo Centralized" />
       <hr />
     </HeaderWrapper>
   );

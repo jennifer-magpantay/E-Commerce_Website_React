@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Container from "./Container";
 import { Form, FormWrapper } from "./FormWrapper";
 import SignInHeader from "./SignInHeader";
@@ -33,7 +34,7 @@ function SignUp() {
         </Form>
         <hr />
         <p>
-          Already have an account?<strong> Sign in</strong>
+          Already have an account?<strong><Link to="/signin"> Sign in here</Link></strong>
         </p>
       </FormWrapper>
       <SignInFooter />
