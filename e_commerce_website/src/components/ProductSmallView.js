@@ -1,5 +1,5 @@
 import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import Star from "@material-ui/icons/Star";
 
 // each product hold id, title, price, rating image
@@ -20,7 +20,7 @@ const ProductSmallContainer = styled.div`
   }
 
   .product_title {
-    margin: 0;
+    margin-bottom: 0;
     font-size: 15px;
   }
 
@@ -34,29 +34,45 @@ const ProductSmallContainer = styled.div`
       font-size: 1rem !important;
     }
   }
+
+  @media (max-width: 800px) {
+    height: 200px;
+
+    .product_price {
+      font-size: 16px;
+    }
+
+    .product_title {
+      font-size: 14px;
+        }
+  }
 `;
 
 const ImageContainer = styled.div`
   width: 100%;
   height: 70%;
   background-color: orange;
+  
+  @media (max-width: 800px) {
+    height: 55%;
+  }
 `;
 
 const ProductImage = styled.img`
-width: 100%;
-height: auto;
-padding: 0;
-margin: 0;
-border-radius: 2px;
-`;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border-radius: 2px;
+  `;
 
-function ProductSmallView({ id, title, price, rating, image }) {
+function ProductSmallView({ id, title, price, rating, image }) { 
+   
   return (
     <ProductSmallContainer>
-      <ImageContainer>
-        {/* image */}
-      <ProductImage src={image} alt="Product Picture"/>
-      </ImageContainer>
+      <ImageContainer >       
+        <ProductImage  src={image} alt="Product Picture" />         
+        </ImageContainer>
       <hr />
       <p className="product_price">€{price}</p>
       <p className="product_title">{title}</p>

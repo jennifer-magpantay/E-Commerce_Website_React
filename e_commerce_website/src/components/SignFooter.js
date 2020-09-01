@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const SignInWrapper = styled.footer`
+const SignFooterWrapper = styled.footer`
   width: 100%;
   height: auto;
   padding: 1% 2%;
@@ -17,9 +17,9 @@ const SignInWrapper = styled.footer`
   }
 `;
 
-function SignInFooter() {
+function SignFooter() {
   return (
-    <SignInWrapper>
+    <SignFooterWrapper>
       <ul>
         <li>Conditions of Use</li>
         <li>Privacy Notice</li>
@@ -29,8 +29,8 @@ function SignInFooter() {
       </ul>
       <hr />
       <p>Copyright 2020 | Jennifer Magpantay</p>
-    </SignInWrapper>
+    </SignFooterWrapper>
   );
 }
 
-export default SignInFooter;
+export default SignFooter;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const GrayContainer = styled.div`
+const SubLinkContainer = styled.div`
     width: 100%;
     background-color: var(--dk-gray);
     color: var(--lg-gray);
@@ -18,4 +18,4 @@ const GrayContainer = styled.div`
     }
 `;
 
-export default GrayContainer;
+export default SubLinkContainer;

@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Container from "./Container";
-import { Form, FormWrapper } from "./FormWrapper";
-import SignInHeader from "./SignInHeader";
-import SignInFooter from "./SignInFooter";
+import { Form, FormWrapper } from "./Form";
+import SignHeader from "./SignHeader";
+import SignFooter from "./SignFooter";
 
 function SignUp() {
   return (
     <Container>
-      <SignInHeader />
+      <SignHeader />
       <FormWrapper>
         <h4>CREATE ACCOUNT</h4>
         <Form>
@@ -34,10 +34,13 @@ function SignUp() {
         </Form>
         <hr />
         <p>
-          Already have an account?<strong><Link to="/signin"> Sign in here</Link></strong>
+          Already have an account?
+          <strong>
+            <Link to="/signin"> Sign in here</Link>
+          </strong>
         </p>
       </FormWrapper>
-      <SignInFooter />
+      <SignFooter />
     </Container>
   );
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FormWrapper = styled.div`
   width: 35%;
@@ -14,7 +14,7 @@ export const FormWrapper = styled.div`
     line-height: 1.5;
   }
 
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     width: 75%;
   }
 `;
@@ -29,11 +29,9 @@ export const Form = styled.form`
   }
 
   .caption {
-      padding: 0;
-      margin: 0;
-      font-size: 12px;
-      text-align: right;
-    }
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    text-align: right;
+  }
 `;
-
-

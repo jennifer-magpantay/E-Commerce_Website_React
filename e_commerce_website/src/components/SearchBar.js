@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import SearchIcon from "@material-ui/icons/Search";
 
-const SearchWrapper = styled.div`
+const SearchBarWrapper = styled.div`
   display: flex;
   width: 100%;
   order: 2;
@@ -26,13 +26,13 @@ const SearchWrapper = styled.div`
   }
 `;
 
-function SearchContainer() {
+function SearchBar() {
   return (
-    <SearchWrapper>
+    <SearchBarWrapper>
       <input type="text" name="search" />
       <SearchIcon className="header_searchIcon" />
-    </SearchWrapper>
+    </SearchBarWrapper>
   );
 }
 
-export default SearchContainer;
+export default SearchBar;

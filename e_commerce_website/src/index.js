@@ -3,19 +3,23 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import Home from './components/Home';
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import Checkout from "./components/Checkout";
 import ErrorPage from "./components/ErrorPage";
+import ProductFullScreen from './components/ProductFullScreen';
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       {/* adding routes for each page/screen */}
       <Route path="/" exact component={App} />
-      <Route path="/signup" component={SignUp} />
-      <Route path="/signin" component={SignIn} />
-      <Route path="/checkout" component={Checkout} />
+      <Route path="/home" exact component={Home} />
+      <Route path="/signup" exact component={SignUp} />
+      <Route path="/signin" exact component={SignIn} />
+      <Route path="/home/checkout" exact component={Checkout} />
+      <Route path="/home/productfullscreen" exact component={ProductFullScreen} />      
       <Route path="/" component={ErrorPage} />
     </Switch>
   </BrowserRouter>,

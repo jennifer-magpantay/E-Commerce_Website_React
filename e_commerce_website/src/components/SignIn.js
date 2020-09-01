@@ -1,10 +1,10 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import Container from "./Container";
-import { Form, FormWrapper } from "./FormWrapper";
+import { Form, FormWrapper } from "./Form";
 import Button from "./Button";
-import SignInHeader from "./SignInHeader";
-import SignInFooter from "./SignInFooter";
+import SignHeader from "./SignHeader";
+import SignFooter from "./SignFooter";
 
 function SignIn() {
   // useHistory hook to navegate between pages
@@ -17,7 +17,7 @@ function SignIn() {
 
   return (
     <Container>
-      <SignInHeader />
+      <SignHeader />
       <FormWrapper>
         <h4>SIGN IN TO YOUR ACCOUNT</h4>
         <Form>
@@ -44,7 +44,7 @@ function SignIn() {
         <p>New to .COM?</p>
         <Button onClick={handleClick}>CREATE ACCOUNT</Button>
       </FormWrapper>
-      <SignInFooter />
+      <SignFooter />
     </Container>
   );
 }

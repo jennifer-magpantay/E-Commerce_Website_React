@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { LogoFooter } from "./LogoIcon";
 import Logo from "../assets/images/logo_footer.png";
-import SignInFooter from "./SignInFooter";
+import SignFooter from "./SignFooter";
 import Container from "./Container";
-import CaptionContainer from "./CaptionContainer";
+import SubLinkContainer from "./SubLinkContainer";
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -22,23 +23,13 @@ const FooterWrapper = styled.footer`
   }
 `;
 
-const LogoIcon = styled.img`
-  width: 150px;
-  padding: 1%;
-  cursor: pointer;
-
-  @media (max-width: 800px) {
-    width: 100px;
-  }
-`;
-
-const ContentContainer = styled.div`
+const FooterContentContainer = styled.div`
   display: flex;
   justify-content: space-around;
   margin-bottom: 2%;
 `;
 
-const Content = styled.div`
+const FooterContent = styled.section`
   text-align: left;
 
   & h5 {
@@ -61,17 +52,16 @@ const Content = styled.div`
 
 function Footer() {
   // const handleSCroll = () => {};
-
   return (
     <Container>
-      <CaptionContainer>
+      <SubLinkContainer>
         {/* adding scrolltotop event */}
         {/* <h5 onClick={handleScroll}> */}
         <h5> BACK TO THE TOP</h5>
-      </CaptionContainer>
+      </SubLinkContainer>
       <FooterWrapper>
-        <ContentContainer>
-          <Content>
+        <FooterContentContainer>
+          <FooterContent>
             <ul>
               <li>
                 <h5>Get to Know Us</h5>
@@ -80,8 +70,8 @@ function Footer() {
               <li>Lorem</li>
               <li>Lorem</li>
             </ul>
-          </Content>
-          <Content>
+          </FooterContent>
+          <FooterContent>
             <ul>
               <li>
                 <h5>Make Money with Us</h5>
@@ -90,8 +80,8 @@ function Footer() {
               <li>Lorem</li>
               <li>Lorem</li>
             </ul>
-          </Content>
-          <Content>
+          </FooterContent>
+          <FooterContent>
             <ul>
               <li>
                 <h5>Payment Methods</h5>
@@ -100,8 +90,8 @@ function Footer() {
               <li>Lorem</li>
               <li>Lorem</li>
             </ul>
-          </Content>
-          <Content>
+          </FooterContent>
+          <FooterContent>
             <ul>
               <li>
                 <h5>Let Us Help You</h5>
@@ -110,11 +100,11 @@ function Footer() {
               <li>Lorem</li>
               <li>Lorem</li>
             </ul>
-          </Content>
-        </ContentContainer>
+          </FooterContent>
+        </FooterContentContainer>
         <hr />
-        <LogoIcon src={Logo} alt=".COM logo" />
-        <SignInFooter />
+        <LogoFooter src={Logo} alt=".COM logo" />
+        <SignFooter />
       </FooterWrapper>
     </Container>
   );
