@@ -7,6 +7,7 @@ import SearchBar from "./SearchBar";
 import NavBar from "./NavBar";
 import Container from "./Container";
 import SubLinkContainer from "./SubLinkContainer";
+import {categoryList, list} from './categoryList';
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -32,28 +33,7 @@ function Header({ links }) {
   const handleClick = () => {
     history.push("/");
   };
-
-  // variable to hold an array of links/items
-  const linksList = [
-    "Today's Deals",
-    "Best Sellers",
-    "Books",
-    "Kindle",
-    "Prime Video",
-    "Gift Ideas",
-    "Customer Service",
-  ];
-  console.log(linksList);
-
-  // variable that will hold de map function to read and display all the items of the array
-  const list = (
-    <ul>
-      {linksList.map((link, i) => (
-        <li key={i}>{link}</li>
-      ))}
-    </ul>
-  );
-
+  // categoryList and list are the variables that will hold de map function to read and display all the items of the array
   return (
     <Container>
       <HeaderWrapper>
@@ -61,7 +41,7 @@ function Header({ links }) {
         <SearchBar />
         <NavBar />
       </HeaderWrapper>
-      <SubLinkContainer links={linksList}>
+      <SubLinkContainer links={categoryList}>
         {/*associate the main prop we used as parameter of the function with the list we eant to render/display  */}
         {list}
         {/* then, declare the variable that holds de map function */}

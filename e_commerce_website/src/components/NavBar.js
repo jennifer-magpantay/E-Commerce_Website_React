@@ -41,14 +41,14 @@ function NavBar() {
         </LinkContainer>
       </Link>
 
-      <Link>
+      <Link to="/">
         <LinkContainer>
           <span>Try it</span>
           <span className="link_bold">Prime</span>
         </LinkContainer>
       </Link>
 
-      <Link>
+      <Link to="/">
         <LinkContainer>
           <span>History</span>
           <span className="link_bold">Orders</span>

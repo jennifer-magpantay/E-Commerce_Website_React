@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const LogoHeader = styled.img`
   width: 190px;
@@ -13,23 +13,27 @@ export const LogoHeader = styled.img`
 
 export const LogoSignHeader = styled.img`
   width: 190px;
-  padding: 1%; 
+  padding: 1%;
   margin-left: auto;
   margin-right: auto;
-  display: block; 
+  display: block;
   cursor: pointer;
 
-  @media (max-width: 800px){
+  @media (max-width: 800px) {
     width: 120px;
   }
- `;
+`;
 
 export const LogoFooter = styled.img`
-width: 150px;
-padding: 1%;
-cursor: pointer;
+  width: 150px;
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
 
-@media (max-width: 800px) {
-  width: 100px;
-}
+  @media (max-width: 800px) {
+    width: 100px;
+    padding: 2%;
+  }
 `;

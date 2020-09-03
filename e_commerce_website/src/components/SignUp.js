@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "./Container";
 import { Form, FormWrapper } from "./Form";
@@ -6,23 +6,52 @@ import SignHeader from "./SignHeader";
 import SignFooter from "./SignFooter";
 
 function SignUp() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleChangeName = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleChangeEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`New profile added - UserName: ${name}, Email: ${email}`);
+    console.log("New profile added ", {name} , {email});
+  };
+
   return (
     <Container>
       <SignHeader />
       <FormWrapper>
         <h4>CREATE ACCOUNT</h4>
-        <Form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
+        <Form onSubmit={handleSubmit}>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={name}
+            onChange={handleChangeName}
+          />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" />
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={handleChangeEmail}
+          />
 
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" id="password" name="password" />
           <p className="caption">Passwords must be at least 6 characters</p>
 
-          <label for="password">Re-enter Password</label>
+          <label htmlFor="password">Re-enter Password</label>
           <input type="password" id="password" name="password" />
 
           <input type="submit" id="submit" name="submit" />

@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from 'react'
 
 function ErrorPage() {
     return (
@@ -9,4 +8,7 @@ function ErrorPage() {
     )
 }
 
-export default ErrorPage;
+export default ErrorPage
+
+
+

@@ -8,7 +8,7 @@ import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import Checkout from "./components/Checkout";
 import ErrorPage from "./components/ErrorPage";
-import ProductFullScreen from './components/ProductFullScreen';
+import ProductPage from './components/ProductPage';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,7 +19,7 @@ ReactDOM.render(
       <Route path="/signup" exact component={SignUp} />
       <Route path="/signin" exact component={SignIn} />
       <Route path="/home/checkout" exact component={Checkout} />
-      <Route path="/home/productfullscreen" exact component={ProductFullScreen} />      
+      <Route path="/home/productpage" exact component={ProductPage} />      
       <Route path="/" component={ErrorPage} />
     </Switch>
   </BrowserRouter>,

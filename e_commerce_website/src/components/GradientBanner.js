@@ -3,9 +3,9 @@ import styled from 'styled-components';
 // https://cssgradient.io/ 
 // gradient css effect
 
-const MainBanner = styled.div`
+const GradientBanner = styled.div`
 width: 100%;
-height: 85vh;
+height: 80vh;
 position: absolute;
 padding: 1%;
 background: rgb(96,163,188);
@@ -14,4 +14,4 @@ z-index: -1;
 `;
 // z-index just works with positioned elements
 
-export default MainBanner;
+export default GradientBanner;

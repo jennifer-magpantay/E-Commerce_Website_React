@@ -1,23 +1,16 @@
-import React from 'react';
-import Wrapper from './Wrapper';
-import Container from './Container';
-import Header from './Header';
-import SignOverFooter from './SignOverFooter';
-import Footer from './Footer';
+import React from "react";
+import Main from "./Main";
+import Header from "./Header";
+import Footer from "./Footer";
 
-function PageDefault({children}) {
-    return (
-        <>
-        <Wrapper>
-            <Header />
-            <Container>
-                { children }
-            </Container>
-            <SignOverFooter />
-            <Footer />
-        </Wrapper>            
-        </>
-    )
+function PageDefault({ children }) {
+  return (
+    <>
+      <Header />
+      <Main>{children}</Main>
+      <Footer />
+    </>
+  );
 }
 
 export default PageDefault;

@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import Container from './Container';
+import SignFooter from "./SignFooter";
 import { LogoFooter } from "./LogoIcon";
 import Logo from "../assets/images/logo_footer.png";
-import SignFooter from "./SignFooter";
-import Container from "./Container";
 import SubLinkContainer from "./SubLinkContainer";
+import SignOverFooter from './SignOverFooter';
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -12,97 +13,68 @@ const FooterWrapper = styled.footer`
   padding: 1% 2%;
   background-color: var(--black);
   color: var(--lg-gray);
-  text-align: center;
 
   & p {
     color: var(--lg-gray);
   }
-
-  & h5 {
-    letter-spacing: 1px;
-  }
 `;
 
 const FooterContentContainer = styled.div`
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2%;
+  padding: 2% 0;
+  border-bottom: 1px solid var(--lg-gray);
 `;
 
-const FooterContent = styled.section`
-  text-align: left;
-
-  & h5 {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-  }
-
+const FooterListContent = styled.ul`
   & li {
     display: block;
     font-size: 12px;
   }
 
-  @media (max-width: 800px) {
-    & h5 {
-      font-size: 12px;
-    }
+  & h5 {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
   }
 `;
 
 function Footer() {
-  // const handleSCroll = () => {};
   return (
     <Container>
+      <SignOverFooter />
       <SubLinkContainer>
-        {/* adding scrolltotop event */}
-        {/* <h5 onClick={handleScroll}> */}
-        <h5> BACK TO THE TOP</h5>
+        <h5>BACK TO THE TOP</h5>
       </SubLinkContainer>
       <FooterWrapper>
         <FooterContentContainer>
-          <FooterContent>
-            <ul>
-              <li>
-                <h5>Get to Know Us</h5>
-              </li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-            </ul>
-          </FooterContent>
-          <FooterContent>
-            <ul>
-              <li>
-                <h5>Make Money with Us</h5>
-              </li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-            </ul>
-          </FooterContent>
-          <FooterContent>
-            <ul>
-              <li>
-                <h5>Payment Methods</h5>
-              </li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-            </ul>
-          </FooterContent>
-          <FooterContent>
-            <ul>
-              <li>
-                <h5>Let Us Help You</h5>
-              </li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-            </ul>
-          </FooterContent>
+          <FooterListContent>
+            <h5 className="section_title">Get to Know Us</h5>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+          </FooterListContent>
+          <FooterListContent>
+            <h5 className="section_title">Make Money with Us</h5>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+          </FooterListContent>
+          <FooterListContent>
+            <h5 className="section_title">Payment Methods</h5>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+          </FooterListContent>
+          <FooterListContent>
+            <h5 className="section_title">Let Us Help You</h5>
+            <li>Lorem</li>
+            <li>Lorem</li>
+            <li>Lorem</li>
+          </FooterListContent>
         </FooterContentContainer>
-        <hr />
         <LogoFooter src={Logo} alt=".COM logo" />
         <SignFooter />
       </FooterWrapper>

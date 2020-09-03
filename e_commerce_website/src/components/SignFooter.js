@@ -4,16 +4,16 @@ import styled from "styled-components";
 const SignFooterWrapper = styled.footer`
   width: 100%;
   height: auto;
-  padding: 1% 2%;
   font-size: 12px;
   text-align: center;
+  margin: 0;
 
    & p {
-    color: var(--dk-gray);
+     color: var(--dk-gray);
   }
 
   & ul {
-    padding-bottom: 2%;
+    padding-bottom: 1%;
   }
 `;
 
