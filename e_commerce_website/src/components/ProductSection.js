@@ -1,12 +1,14 @@
 import React from "react";
+import ProductWrapper from "./ProductWrapper";
 import styled from "styled-components";
-import PropTypes from "prop-types";
+import Button from "./Button";
 import Star from "@material-ui/icons/Star";
 import { ProductSectionContainer } from "./ProductContainers";
-import ProductWrapper from "./ProductWrapper";
+import PropTypes from "prop-types";
 
 // images are imported within 275x275px measures
-const ProductImage = styled.img`
+export const ProductImage = styled.img`
+ margin-bottom: 2%;
   border-radius: 2px;
 
   @media (max-width: 800px) {
@@ -14,6 +16,7 @@ const ProductImage = styled.img`
   }
 `;
 
+//array list with the product info
 const productsList = [
   {
     id: 1,
@@ -49,9 +52,10 @@ const productsList = [
   },
 ];
 
+//reading the array and for each item, return the elements as a product section, inside a container
 const list = (
   <>
-  {/* for each item of the array, return a product container */}
+    {/* for each item of the array, return a product container */}
     {productsList.map((product, i) => (
       // giving to each item a unique key, reading src and lat from the array list
       <ProductSectionContainer>
@@ -59,7 +63,6 @@ const list = (
           {product.category}
         </h3>
         <ProductImage src={product.image} alt={product.title} />
-        <hr />
         <p className="product_price">€{product.price}</p>
         <p className="product_title">{product.title}</p>
         <div className="product_rating">
@@ -76,10 +79,13 @@ const list = (
               ))
           }
         </div>
+        {/* button to add the product to the basket */}
+        <Button>Add to basket</Button>
       </ProductSectionContainer>
     ))}
   </>
 );
+
 // section of four products displayed
 // each product hold id, title, price, rating image
 //those attributes will be used as paramenters - props
@@ -87,7 +93,7 @@ function ProductSection({ products }) {
   return <ProductWrapper products={productsList}>{list}</ProductWrapper>;
 }
 
-ProductSection.propTypes = {
+productsList.propTypes = {
   id: PropTypes.number,
   title: PropTypes.string,
   price: PropTypes.number,

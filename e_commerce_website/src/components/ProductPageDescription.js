@@ -39,7 +39,7 @@ function ProductPageDescription({ id, title="No title provided", price=" no pric
               ))
           }
         </div>
-        <Button>ADD</Button>
+        <Button>Add to Basket</Button>
       </ProductDescriptionContainer>     
     </ProductPageContainer>
     {/* // add row of products */}

@@ -5,6 +5,8 @@ const Main = styled.main`
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--lg-gray);
+  z-index: 0;
 `;
 
 export default Main;

@@ -17,7 +17,7 @@ const ProductRowWrapper = styled.div`
 const ProductRowImageContainer = styled.div`
   display: flex;
   padding: 1%;
-  background-color: var(--lg-gray);
+  background-color: var(--white);
   overflow-y: hidden;
   overflow-x: scroll;
 
@@ -107,9 +107,7 @@ const list = (
 
 function ProductRow({ listOfmages }) {
   return (
-    <ProductRowWrapper>
-      {/* bategory label */}
-      <h3>Shop all learning essentials by Category</h3>
+    <ProductRowWrapper>        
       <ProductRowImageContainer listOfImages={imagesList}>
         {list}
       </ProductRowImageContainer>

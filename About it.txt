@@ -10,6 +10,9 @@ ReactJS for front end
 * create a project on Firebase
 * npm install firebase tools
 * npm install styled-components
-* npm-intall react-router-dom
+* npm install react-router-dom
+* npm install @material-ui/core 
+* npm install @material-ui/icons 
+
 
 
