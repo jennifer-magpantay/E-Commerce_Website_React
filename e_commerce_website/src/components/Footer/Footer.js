@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Container from './Container';
-import SignFooter from "./SignFooter";
-import { LogoFooter } from "./LogoIcon";
-import Logo from "../assets/images/logo_footer.png";
-import SubLinkContainer from "./SubLinkContainer";
+import Container from '../Container';
+import SignFooter from "../SignIn/SignFooter";
+import { LogoFooter } from "../LogoIcon";
+import Logo from '../../assets/images/logo_footer.png';
+import SubLinkContainer from "../SubLinkContainer";
 import SignOverFooter from './SignOverFooter';
 
 const FooterWrapper = styled.footer`
@@ -13,7 +13,6 @@ const FooterWrapper = styled.footer`
   padding: 1% 2%;
   background-color: var(--black);
   color: var(--lg-gray);
-
   & p {
     color: var(--lg-gray);
   }
@@ -33,7 +32,6 @@ const FooterListContent = styled.ul`
     display: block;
     font-size: 12px;
   }
-
   & h5 {
     margin: 0;
     font-size: 12px;
@@ -47,6 +45,7 @@ function Footer() {
       <SignOverFooter />
       <SubLinkContainer>
         <h5>BACK TO THE TOP</h5>
+        {/* when it is clicked, will bring the user to the top of the page */}
       </SubLinkContainer>
       <FooterWrapper>
         <FooterContentContainer>

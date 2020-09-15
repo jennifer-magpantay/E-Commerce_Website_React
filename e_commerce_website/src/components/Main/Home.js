@@ -1,12 +1,12 @@
 import React from "react";
 import PageDefault from "./PageDefault";
-import GradientBanner from "./GradientBanner";
-import Caroussel from "./Caroussel";
-import ProductSection from "./ProductSection";
-import ProductWrapper from "./ProductWrapper";
-import ProductRow from "./ProductRow";
-import Main from "./Main";
-import Label from "./Label";
+import GradientBanner from "../GradientBanner";
+import Caroussel from "../Caroussel";
+import ProductSection from "../Products/ProductSection";
+import ProductWrapper from "../Products/ProductWrapper";
+import ProductRow from "../Products/ProductRow";
+import Main from "../Main";
+import Label from "../Label";
 
 function Home() {
   return (

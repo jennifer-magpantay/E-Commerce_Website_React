@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from 'prop-types';
-import Main from './Main';
+import Main from '../Main';
 import Star from "@material-ui/icons/Star";
 import {ProductPageContainer, ProductImageContainer, ProductDescriptionContainer} from './ProductContainers';
-import Button from './Button';
+import Button from '../Button';
 
 const ProductImage = styled.img`
   border-radius: 2px;

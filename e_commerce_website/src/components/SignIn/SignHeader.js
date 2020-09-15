@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { LogoSignHeader } from './LogoIcon';
-import Logo from "../assets/images/logo_white_1.png";
+import { LogoSignHeader } from '../LogoIcon';
+import Logo from "../../assets/images/logo_white_1.png";
 
 const SignHeaderWrapper= styled.header`
   width: 100%;

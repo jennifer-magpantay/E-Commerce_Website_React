@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { LogoHeader } from "./LogoIcon";
-import Logo from "../assets/images/logo_black.png";
+import { LogoHeader } from "../LogoIcon";
+import Logo from "../../assets/images/logo_black.png";
 import SearchBar from "./SearchBar";
 import NavBar from "./NavBar";
-import Container from "./Container";
-import SubLinkContainer from "./SubLinkContainer";
-import {categoryList, list} from './categoryList';
+import Container from "../Container";
+import SubLinkContainer from "../SubLinkContainer";
+import {subLinkList, list} from '../subLinkList';
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -41,7 +41,7 @@ function Header({ links }) {
         <SearchBar />
         <NavBar />
       </HeaderWrapper>
-      <SubLinkContainer links={categoryList}>
+      <SubLinkContainer links={subLinkList}>
         {/*associate the main prop we used as parameter of the function with the list we eant to render/display  */}
         {list}
         {/* then, declare the variable that holds de map function */}

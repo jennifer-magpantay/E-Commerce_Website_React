@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import Home from './components/Home';
-import SignUp from "./components/SignUp";
-import SignIn from "./components/SignIn";
+import Home from './components/Main/Home';
+import SignUp from "./components/SignIn/SignUp";
+import SignIn from "./components/SignIn/SignIn";
 import Checkout from "./components/Checkout";
-import ErrorPage from "./components/ErrorPage";
-import ProductPage from './components/ProductPage';
+import ErrorPage from "./components/Main/ErrorPage";
+import ProductPage from './components/Products/ProductPage';
 
 ReactDOM.render(
   <BrowserRouter>

@@ -47,7 +47,6 @@ export const ProductSectionContainer = styled.div`
     display: inline-flex;
     color: var(--golden) !important;
     font-size: 6px;
-
     & svg {
       margin: 0;
       font-size: 1rem !important;
@@ -103,7 +102,6 @@ export const ProductDescriptionContainer = styled.div`
     display: inline-flex;
     color: var(--golden) !important;
     font-size: 12px;
-
     & svg {
       margin: 0;
       font-size: 1.5rem !important;

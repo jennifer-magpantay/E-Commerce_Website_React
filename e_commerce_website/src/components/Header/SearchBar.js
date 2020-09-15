@@ -6,15 +6,14 @@ const SearchBarWrapper = styled.div`
   display: flex;
   width: 100%;
   order: 2;
-
-  @media (max-width: 800px) {
-    order: 3;
-  }
-
   & input {
     height: 40px;
     border: none;
     border-radius: 0;
+  }
+
+  @media (max-width: 800px) {
+    order: 3;
   }
 
   .header_searchIcon {

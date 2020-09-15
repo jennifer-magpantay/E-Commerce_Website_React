@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import Container from "./Container";
+import Container from "../Container";
 import { Form, FormWrapper } from "./Form";
-import Button from "./Button";
+import Button from "../Button";
 import SignHeader from "./SignHeader";
 import SignFooter from "./SignFooter";
 

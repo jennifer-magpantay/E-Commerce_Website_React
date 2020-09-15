@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Container from "./Container";
+import Container from "../Container";
 import { Form, FormWrapper } from "./Form";
 import SignHeader from "./SignHeader";
 import SignFooter from "./SignFooter";

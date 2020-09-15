@@ -1,7 +1,7 @@
 import React from "react";
 
 // variable to hold an array of links/items
-export const categoryList = [
+export const subLinkList = [
     "Today's Deals",
     "Last Days of Sales",
     "Best Sellers",
@@ -14,7 +14,7 @@ export const categoryList = [
 
   export const list = (
     <ul>
-      {categoryList.map((category, i) => (
+      {subLinkList.map((category, i) => (
         <li key={i}>{category}</li>
       ))}
     </ul>

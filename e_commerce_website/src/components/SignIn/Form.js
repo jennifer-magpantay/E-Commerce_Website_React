@@ -23,7 +23,6 @@ export const Form = styled.form`
   color: var(--dk-gray);
   font-size: 12px;
   text-align: left;
-
   & p {
     color: var(--dk-gray);
   }
