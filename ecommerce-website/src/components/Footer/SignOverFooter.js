@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { useHistory, Link } from "react-router-dom";
-import {Button} from "../Button";
+import { Button } from "../Button";
 
 const SignOverFooterWrapper = styled.div`
   width: 25%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 1% auto;
   font-size: 14px;
   text-align: center;
 

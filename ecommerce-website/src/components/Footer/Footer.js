@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Container from '../Container';
+import Container from "../Container";
 import SignFooter from "../SignIn/SignFooter";
 import { LogoFooter } from "../LogoIcon";
-import Logo from '../../assets/images/logo_footer.png';
+import Logo from "../../assets/images/logo_footer.png";
 import SubLinkContainer from "../SubLinkContainer";
-import SignOverFooter from './SignOverFooter';
+import SignOverFooter from "./SignOverFooter";
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -25,6 +25,7 @@ const FooterContentContainer = styled.div`
   justify-content: space-around;
   padding: 2% 0;
   border-bottom: 1px solid var(--lg-gray);
+  line-height: 18px;
 `;
 
 const FooterListContent = styled.ul`
@@ -33,9 +34,8 @@ const FooterListContent = styled.ul`
     font-size: 12px;
   }
   & h5 {
-    margin: 0;
     font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
 `;
 

@@ -67,19 +67,12 @@ export const productsSectionList = [
   },
 ];
 
-// productsRowList.propTypes = {
-//   id: PropTypes.number,
-//   title: PropTypes.string,
-//   price: PropTypes.number,
-//   rating: PropTypes.number,
-// };
-
 //array list with the productsRow info
 // image: "https://picsum.photos/200/200",
 export const productsRowList = [
   {
     id: "5f65cfec0f543945d98671f5",
-    catefory: "duis voluptate",
+    category: "duis voluptate",
     title: "eu sint in anim id",
     price: 27.68,
     image: "https://picsum.photos/200/200",
@@ -94,7 +87,7 @@ export const productsRowList = [
   },
   {
     id: "5f65cfecffb7323ae34e8fb1",
-    catefory: "in culpa",
+    category: "in culpa",
     title: "proident sit quis ea tempor",
     price: 32.74,
     image: "https://picsum.photos/200/200",
@@ -109,7 +102,7 @@ export const productsRowList = [
   },
   {
     id: "5f65cfec6bda91a3f4900e01",
-    catefory: "sunt dolore",
+    category: "sunt dolore",
     title: "aliqua ea nulla dolor exercitation",
     price: 20.24,
     image: "https://picsum.photos/200/200",
@@ -124,7 +117,7 @@ export const productsRowList = [
   },
   {
     id: "5f65cfec00eca8b682aba032",
-    catefory: "sunt ea",
+    category: "sunt ea",
     title: "et sit amet fugiat magna",
     price: 19.85,
     image: "https://picsum.photos/200/200",
@@ -139,7 +132,7 @@ export const productsRowList = [
   },
   {
     id: "5f65cfecc125820f40a7788f",
-    catefory: "ad ut",
+    category: "ad ut",
     title: "nulla aute in anim fugiat",
     price: 18.38,
     image: "https://picsum.photos/200/200",
@@ -154,7 +147,7 @@ export const productsRowList = [
   },
   {
     id: "5f65cfecae350e744aaf66ac",
-    catefory: "deserunt officia",
+    category: "deserunt officia",
     title: "fugiat voluptate labore ipsum id",
     price: 16.74,
     image: "https://picsum.photos/200/200",
@@ -169,7 +162,7 @@ export const productsRowList = [
   },
   {
     id: "5f65cfec0aedef74480ba171",
-    catefory: "aute ipsum",
+    category: "aute ipsum",
     title: "labore do fugiat consectetur sunt",
     price: 10.32,
     image: "https://picsum.photos/200/200",
@@ -184,7 +177,7 @@ export const productsRowList = [
   },
   {
     id: "5f65cfec65cabae67e33a316",
-    catefory: "aliqua nulla",
+    category: "aliqua nulla",
     title: "officia do dolor tempor qui",
     price: 26.52,
     image: "https://picsum.photos/200/200",
@@ -198,6 +191,35 @@ export const productsRowList = [
     address: "396 Butler Street, Freelandville, Wyoming, 4729",
   },
 ];
+
+productsRowList.propTypes = {
+  id: PropTypes.number,
+  category: PropTypes.string,
+  title: PropTypes.string,
+  price: PropTypes.number,
+  description: PropTypes.string,
+  rating: PropTypes.number,
+  inBasket: PropTypes.bool,
+  company: PropTypes.string,
+  email: PropTypes.string,
+  phone: PropTypes.string,
+  address: PropTypes.string,
+};
+
+productsSectionList.propTypes = {
+  id: PropTypes.number,
+  category: PropTypes.string,
+  title: PropTypes.string,
+  price: PropTypes.number,
+  description: PropTypes.string,
+  rating: PropTypes.number,
+  inBasket: PropTypes.bool,
+  company: PropTypes.string,
+  email: PropTypes.string,
+  phone: PropTypes.string,
+  address: PropTypes.string,
+};
+
 // productsSectionList.propTypes = {
 //   id: PropTypes.number,
 //   title: PropTypes.string,
