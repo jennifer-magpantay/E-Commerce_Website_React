@@ -8,7 +8,7 @@ Practical react project in ongoing development process, following [CleverProgram
 For this project, a clone of Amazon's website has been developed. Check out progress [here](https://e-commerce-website-f33d6.web.app/).
 
 Achievements:
-- Layout developed using react components;
+- Layout and design using react components and Material UI;
 - Style applied through styled-components;
 - Images: [Lorem Picsum](https://picsum.photos/) ;
 - Deployment through Firebase;
